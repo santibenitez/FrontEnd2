@@ -1,0 +1,31 @@
+body{background-color: #F9E79F
+}
+
+p {text-align: center;
+  font-family: arial;
+  color: #CB4335
+}
+
+h1 { text-align: center;
+  color: #A93226;
+  text-decoration:underline;
+  font-size: 300%;
+  font-family: verdana;
+}
+
+h2 {text-align: center;
+  color: #A93226;
+  text-decoration: underline;
+  font-size: 150%;
+  font-family: verdana;
+}
+
+.elementoschipa {width: 560px;
+  height: 315px;
+  margin: 0 auto;
+  display: block;
+}
+
+.listas {font-family: arial;
+  color: #CB4335
+}
