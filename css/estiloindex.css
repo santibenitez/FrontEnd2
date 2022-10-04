@@ -1,11 +1,6 @@
 body{
   background-color: white;
 }
-p {text-align: center;
-  font-family: monospace;
-  color: #CB4335
-}
-
 .titulo{
   color:#E74C3C ;
   font-family: monospace;
@@ -47,28 +42,40 @@ a:hover{
   background-color:#2ECC71
 }
 
-.titulo_ppal { text-align: center;
-  color: #A93226;
-  text-decoration:underline;
-  font-size: 300%;
+.parrafo_ppal{
+  font-family: monospace;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.logo_whatsapp{
+  background-color: #A9DFBF;
+  border: 1px solid white;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 15px;
+  bottom: 15px;
+  right: 10px;
+  position: fixed;
+}
+
+.boton_whatsapp{
+  width: 40px;
+}
+
+.lista_recetas{
+  font-size: 30px;
   font-family: monospace;
 }
 
-.subtitulos_ppal {text-align: center;
-  color: #A93226;
-  text-decoration: underline;
-  font-size: 150%;
-  font-family: monospace;
+.link_recetas{
+  text-decoration: none;
+  color: black
 }
 
-.elementoschipa {width: 560px;
-  height: 315px;
-  margin: 0 auto;
-  display: block;
-}
-
-.listas {font-family: arial;
-  color: #CB4335
+.link_recetas:hover{
+  background-color: black;
+  color: white;
 }
 
 footer{
@@ -88,10 +95,4 @@ footer{
   height: 50px;
   padding: 20px;
   display: inline;
-}
-
-.parrafo_footer{
-  text-align: left;
-  color: black;
-
 }
