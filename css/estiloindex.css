@@ -1,50 +1,221 @@
-body{
-  background-color: white;
-}
-.titulo{
-  color:#E74C3C ;
-  font-family: monospace;
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center;
-  padding: 15px;
-  background-color: #A9DFBF;
-  border: 5px;
-  border-color: #E74C3C;
-  border-radius: 5px;
-  margin: 0 0 0 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@font-face {
+  font-family: "bienvenidos";
+  src: url("../fuente/bienvenidos.ttf") format("truetype");
 }
 
-.lista_otraspaginas{
+header{
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #212F3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_pagina{
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  background-color: #ECF0F1;
+  transition: 0.4s;
+}
+
+.logo_pagina:hover{
+  transform: scale(1.2);
+}
+
+h1{
+  font-size: 3rem;
+  color: #ECF0F1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.redes_sociales{
+  width: 30vw;
+  margin-right: 2vw;
+}
+
+.redes_sociales ul{
   list-style: none;
-  background: #A9DFBF;
-  border-radius: 10px;
-  margin: 0 0 0 0
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
-.logos {
-  font-family: monospace;
-  font-size: 70;
-  display: inline-block;
-  padding: 20px;
-  bottom: 20px;
-  right: 20px;
+.logos_redes{
+  height: 5vh;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #ECF0F1;
+  border-radius: 50%;
+  transition: 0.4s;
 }
 
-.otraspaginas {
+.logos_redes:hover{
+  transform: scale(1.2);
+  background-color: #707B7C
+}
+
+.banner{
+  background-image: url("../imagenes/bannerppal.jpg");
+  background-size: cover;
+  height: 85vh;
+}
+
+.banner h2{
+  font-family: "bienvenidos";
+  color: #ECF0F1;
+  font-size: 10rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.recetas0{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recetas{
+  width: 50%;
+  height: 65vh;
+  float: left;
+  background-image: url("../imagenes/frutas.jpg");
+  background-size: cover;
+}
+
+.recetas h3{
+  font-family: "bienvenidos";
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  color: #ECF0F1;
+}
+
+.recetas2{
+  background-color: #ECF0F1;
+  width: 50%;
+  height: 65vh;
   text-decoration: none;
-  color: white;
-  display: block;
-  padding: 15px 85px;
+  float: right;
 }
 
-a:hover{
-  background-color:#2ECC71
+.recetas2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.parrafo_ppal{
-  font-family: monospace;
-  font-size: 30px;
+.recetas2 ul li a{
+  text-decoration: none;
+  font-family: "bienvenidos";
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+  transition: 0.3s;
+}
+
+.recetas2 ul li:hover{
+  transform: scale(1.1);
+}
+
+.recomendaciones0{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recomendaciones2{
+  width: 50%;
+  height: 65vh;
+  float: right;
+  background-image: url("../imagenes/rolls.jpg");
+  background-size: cover;
+}
+
+.recomendaciones2 h3{
+  font-family: "bienvenidos";
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  color: #ECF0F1;
+}
+
+.recomendaciones{
+  background-color: #ECF0F1;
+  width: 50%;
+  height: 65vh;
+  text-decoration: none;
+  float: left;
+}
+
+.recomendaciones ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.recomendaciones ul li a{
+  text-decoration: none;
+  font-family: "bienvenidos";
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+  transition: 0.3s;
+}
+
+.recomendaciones ul li:hover{
+  transform: scale(1.1);
+}
+
+footer{
+ display: flex;
+ flex-flow: row wrap;
+ background-color: #212F3C;
+ height: 50vh;
+ width: 100%;
+}
+
+.ubicacion{
+  float: left;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes_sociales2{
+  width: 30vw;
+  margin-right: 3vw;
+}
+
+.redes_sociales2 ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nosotros{
+  float: right;
+  width: 30vw;
+  font-family: "bienvenidos";
+  font-size: 1rem;
+  color: #ECF0F1;
   text-align: justify;
 }
 
@@ -57,42 +228,13 @@ a:hover{
   bottom: 15px;
   right: 10px;
   position: fixed;
+  transition: 0.3s;
 }
 
 .boton_whatsapp{
-  width: 40px;
+  width: 4vw;
 }
 
-.lista_recetas{
-  font-size: 30px;
-  font-family: monospace;
-}
-
-.link_recetas{
-  text-decoration: none;
-  color: black
-}
-
-.link_recetas:hover{
+.logo_whatsapp:hover{
   background-color: black;
-  color: white;
-}
-
-footer{
-  background-color: #A9DFBF;
-  color: black;
-  font-family: monospace;
-  padding-left: 5px;
-}
-
-.lista_contactanos{
-  list-style: none;
-  display: inline;
-}
-
-.logos_contactos{
-  width: 50px;
-  height: 50px;
-  padding: 20px;
-  display: inline;
 }

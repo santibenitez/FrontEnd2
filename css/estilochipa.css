@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+@font-face {
+  font-family: "bienvenidos";
+  src: url("../fuente/bienvenidos.ttf") format("truetype");
+}
+
+header{
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #212F3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_pagina{
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.logo_pagina:hover{
+  transform: scale(1.2);
+}
+
+h1{
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.redes_sociales{
+  width: 30vw;
+  margin-right: 2vw;
+}
+
+.redes_sociales ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.logos_redes{
+  height: 5vh;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.logos_redes:hover{
+  transform: scale(1.2);
+  background-color: #707B7C
+}
+
+.banner_chipa{
+  background-image: url("../imagenes/panchipa.jpg");
+  background-size: cover;
+  height: 85vh;
+}
+
+.banner_chipa h2{
+  font-family: "bienvenidos";
+  color: #ECF0F1;
+  font-size: 7rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.historia{
+  display: flex;
+  background-color: #ECF0F1;
+  width: 100%;
+  height: 40vh;
+  flex-wrap: wrap;
+}
+
+.subtitulos{
+  width: 45vw;
+}
+
+.subtitulos h3{
+  font-family: "bienvenidos";
+  color: #FADBD8;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.historia2{
+  width: 45vw;
+  font-family: "bienvenidos";
+  text-align: center;
+  font-size: 1rem;
+}
+
+.ingredientes{
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  flex-wrap: wrap;
+  background-color: #ECF0F1;
+}
+
+.ingredientes1{
+  width: 45vw;
+  font-family: "bienvenidos";
+  text-align: center;
+  font-size: 1rem;
+}
+
+.ingredientes1 ul{
+  list-style: none;
+}
+
+.receta{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  flex-wrap: wrap;
+  background-color: #ECF0F1;
+}
+
+.receta1{
+  max-width: 50vw;
+  max-height: 40vh;
+}
+
+.receta2{
+    width: 40vw;
+    font-family: "bienvenidos";
+    text-align: center;
+    font-size: 1rem;
+}
+
+.receta2 ol{
+  list-style: none;
+}
+
+footer{
+ display: flex;
+ flex-flow: row wrap;
+ background-color: #212F3C;
+ height: 50vh;
+ width: 100%;
+}
+
+.ubicacion{
+  float: left;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes_sociales2{
+  width: 30vw;
+  margin-right: 3vw;
+}
+
+.redes_sociales2 ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nosotros{
+  float: right;
+  width: 30vw;
+  font-family: "bienvenidos";
+  font-size: 1rem;
+  color: #ECF0F1;
+  text-align: justify;
+}
+
+.logo_whatsapp{
+  background-color: #A9DFBF;
+  border: 1px solid white;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 15px;
+  bottom: 15px;
+  right: 10px;
+  position: fixed;
+  transition: 0.3s;
+}
+
+.boton_whatsapp{
+  width: 4vw;
+}
+
+.logo_whatsapp:hover{
+  background-color: black;
+}
