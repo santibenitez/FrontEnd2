@@ -5,11 +5,19 @@
   src: url("../fuente/bienvenidos.ttf") format("truetype");
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
 header{
   height: 10vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  width: 100vw;
   background: #212F3C;
   display: flex;
   justify-content: space-between;
@@ -18,13 +26,12 @@ header{
 
 .logo{
   width: 8vw;
-  display: flex;
-  justify-content: center;
 }
 
 .logo_pagina{
   height: 7vh;
   width: 7vh;
+  margin-left: 1.5rem;
   border-radius: 50%;
   background-color: #ECF0F1;
   transition: 0.4s;
@@ -237,4 +244,57 @@ footer{
 
 .logo_whatsapp:hover{
   background-color: black;
+}
+
+@media (max-width: 50rem) {
+  html{
+    font-size: 12px;
+  }
+  .recetas0{
+    flex-flow: column wrap;
+  }
+  .recetas{
+    width: 100vw;
+  }
+  .recetas2{
+    width: 100vw;
+    text-align: center;
+  }
+  .recomendaciones{
+    width: 100vw;
+    order: 2;
+    text-align: center;
+  }
+  .recomendaciones2{
+    width: 100vw;
+    order: 1;
+  }
+  .recomendaciones0{
+    flex-flow:column wrap;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .redes_sociales2{
+    width: 100vw;
+    order:1;
+ }
+ .ubicacion{
+   width: 100vw;
+   order:2;
+ }
+ .nosotros{
+   width: 100vw;
+   order:3;
+ }
+}
+
+@media (max-width: 30rem){
+  .banner h2{
+    font-size: 5rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
 }
