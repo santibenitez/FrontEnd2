@@ -23,6 +23,7 @@ header{
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 999;
 }
 
 .logo{
@@ -211,6 +212,24 @@ h1{
 
 .recomendaciones ul li:hover{
   transform: scale(1.1);
+}
+
+.bannermasvistas{
+  width: 100%;
+  background-color: #212F3C;
+  margin: 0;
+}
+
+.bannermasvistas h3{
+  font-size: 3rem;
+  font-family: "bienvenidos";
+  color: #ECF0F1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.card img{
+  max-height: 40vh;
 }
 
 footer{
