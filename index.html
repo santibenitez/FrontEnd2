@@ -9,9 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estiloindex.css">
     <title>Recetas del mundo</title>
+    <script> alert ("¡Bienvenidxs a Sabores del Mundo!")</script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="logo">
         <img src="./imagenes/logos/vegetariano.png" alt="logo_pagina" class="logo_pagina">
       </div>
@@ -27,7 +28,7 @@
         </ul>
       </div>
     </header>
-    <div class="banner">
+    <div class="banner" id="banner">
       <br><br><br><br><br><br><br><br>
       <h2>Bienvenidos</h2>
     </div>
@@ -36,13 +37,13 @@
       <br><br><br><br><br><br>
       <h3>Recetas</h3>
     </section>
-    <aside class="recetas2">
+    <aside class="recetas2" id="recetas">
       <ul>
-        <li><a href="#">Pan integral</a></li>
-        <li><a href="#">Pan de semillas</a></li>
-        <li><a href="recetachipa.html">Chipá</a></li>
-        <li><a href="#">Pan pita</a></li>
-        <li><a href="#">Pan de brocolí</a></li>
+        <li><a href="#" id="recetas1">Pan integral</a></li>
+        <li><a href="#" id="recetas2">Pan de semillas</a></li>
+        <li><a href="recetachipa.html" id="recetas3">Chipá</a></li>
+        <li><a href="#" id="recetas4">Pan pita</a></li>
+        <li><a href="#" id="recetas5">Pan de brocolí</a></li>
       </ul>
     </aside>
     </div>
@@ -52,13 +53,13 @@
       <img src="./imagenes/logos/appstore.png" alt="No se puede cargar la imagen" class="logoapp">
     </div>
     <div class="recomendaciones0">
-    <section class="recomendaciones">
+    <section class="recomendaciones" id="recomendaciones">
       <ul>
-        <li><a href="wwww.cocinerosargentinos.com" target="_blank">Cocineros Argentinos</a></li>
-        <li><a href="wwww.paulinacocina.net" target="_blank">Paulina Cocina</a></li>
-        <li><a href="wwww.elgourmet.com" target="_blank">Gourmet</a></li>
-        <li><a href="wwww.nataliakiako.com" target="_blank">Natalia Kiako</a></li>
-        <li><a href="wwww.cookpad.com" target="_blank">Cookpad</a></li>
+        <li><a href="wwww.cocinerosargentinos.com" target="_blank" class="modonocturno" id="recomendaciones1">Cocineros Argentinos</a></li>
+        <li><a href="wwww.paulinacocina.net" target="_blank" class="modonocturno" id="recomendaciones2">Paulina Cocina</a></li>
+        <li><a href="wwww.elgourmet.com" target="_blank" class="modonocturno" id="recomendaciones3">Gourmet</a></li>
+        <li><a href="wwww.nataliakiako.com" target="_blank" class="modonocturno" id="recomendaciones4">Natalia Kiako</a></li>
+        <li><a href="wwww.cookpad.com" target="_blank" class="modonocturno" id="recomendaciones5">Cookpad</a></li>
       </ul>
     </section>
     <aside class="recomendaciones2">
@@ -66,7 +67,7 @@
       <h3>Recomendaciones</h3>
     </aside>
     </div>
-    <div class="bannermasvistas">
+    <div class="bannermasvistas" id="masvistas">
       <h3>Conoce nuestras recetas más vistas del año</h3>
     </div>
     <div class="row row-cols-1 row-cols-sm-3">
@@ -104,7 +105,7 @@
             </div>
           </div>
         </div>
-    <footer>
+    <footer id="footer">
       <div class="ubicacion">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.934761824384!2d-57.893747285185064!3d-34.882984479833944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e5b8399857a3%3A0x840112a94710a271!2sTolosa%201061%2C%20B1923%20Berisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666299052439!5m2!1ses-419!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -118,14 +119,15 @@
           </ul>
       </div>
       <div class="nosotros">
-          <br><br>
-          <p>Somos un grupo de amigxs enamorados de la cocina. Nos junto las ganas de comer rico y compartir estas recetas con todxs. Seguinos en redes sociales para saber más de nosotros. </p>
+        <button type="button" class="btn btn-outline-light" onclick="desarrollador()">Datos del desarrollador</button>
+        <button type="button" class="btn btn-outline-light" onclick="modonocturno()">Modo nocturno</button>
       </div>
     </footer>
-    <small><b>Recetas del mundo</b>  Copyrigth 2022. Todos los derechos reservados.</small>
+    <small class="modonocturno"><b>Recetas del mundo</b>  Copyrigth 2022. Todos los derechos reservados.</small>
     <section>
     <a href="htpps://wa.me/5492216191617" target="_blank" class="logo_whatsapp"><img src="./imagenes/logos/logo_whatsapp.png" alt="logo_whatsapp" class="boton_whatsapp"></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
